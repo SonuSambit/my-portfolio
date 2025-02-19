@@ -1,6 +1,7 @@
 /* Header Styling */
 .header {
     text-align: center;
+    background-color: #000;
     padding: 20px 0;
     color: #fff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
