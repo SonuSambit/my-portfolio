@@ -81,3 +81,12 @@
   height: auto;
   display: block;
 }
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
