@@ -42,3 +42,8 @@
 .work-card a:hover {
     background: #0056b3;
 }
+.banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
