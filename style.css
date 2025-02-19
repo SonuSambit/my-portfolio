@@ -1,65 +1,41 @@
 /* Header Styling */
 .header {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
     position: relative;
-    overflow: hidden;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('banner.jpg') no-repeat center center/cover;
 }
 
-.header::before {
-    content: "";
-    background: url('images/your-image-name.jpg') center/cover no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 20%;
-    z-index: -1;
-    opacity: 0.3;  /* Image ko aur fade karne ke liye */
-    filter: brightness(60%);  /* Darken effect for better text visibility */
-}
-
-.header h1 {
-    font-size: 3em;
-    font-weight: bold;
-    z-index: 2;
-}
-
-.header p {
-    font-size: 1.2em;
-    color: #ccc;
-    margin-top: 10px;
-    z-index: 2;
-}
 .title {
-    margin-bottom: 5px
     font-size: 4em;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    letter-spacing: 2px;
-    animation: slideIn 2s ease-in-out;
+    letter-spacing: 3px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 2s ease-in-out;
+    transition: transform 0.3s;
+}
+
+.title:hover {
+    transform: scale(1.1);
 }
 
 .subtitle {
-    margin-top: 0;
-    font-size: 18px;
+    font-size: 1.3em;
     font-family: 'Roboto', sans-serif;
-    color: #f0f0f0;
-    opacity: 0.8;
+    color: #f2f2f2;
+    opacity: 0.85;
+    letter-spacing: 1px;
 }
 
 /* Animation */
-@keyframes slideIn {
+@keyframes fadeIn {
     0% {
-        transform: translateY(-100px);
         opacity: 0;
     }
     100% {
-        transform: translateY(0);
         opacity: 1;
     }
 }
